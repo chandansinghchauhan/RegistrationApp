@@ -1,0 +1,409 @@
+﻿    <div class="container">
+        <div class="row flex">
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-10 center">
+                <div class="shadow steps big-pages">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                            <!-- Change : arrow/cross for mobile -->
+                            <div class="title"><a href="#" class="visible-xs visible-sm arrow-return"><img src="app-content/img/arrow.png"></a>Sign Up</div>
+                            <!-- End -->
+                        </div>
+                    </div>
+                        
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 stepper progressstep">                        
+                            <div class="progressstepBar first"></div>                   
+                            <div class="progressstepBar second"></div>
+                        </div>
+                        <!-- Change for mobile -->
+                        <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6 stepper">
+                            <ul style="width: 100%">
+                                <li style="left: 0px;" class="complete"><div>Your account</div></li>
+                                <li style="left: 47.5%;"><div class="hidden-xs hidden-sm">Your company</div></li>
+                                <li style="left: 95.5%;"><div class="hidden-xs hidden-sm">Confirmation</div></li>
+                            </ul>
+                        </div>
+                        <!-- End -->
+                    </div>
+        
+                    <!-- Change : Reviewed structure -->
+                    <div class="row col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
+                        <form class="form-horizontal form-edit" onsubmit="return validationEmailPhone()">
+                            <div class="tab-content">
+                                <div class="myprofile tab-pane active" id="col-1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col col-lg-12">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col col-md-offset-1 col-lg-5 col-lg-offset-1 column-1">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>First Name:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="name" class="form-control" id="inputName3" tabindex="1" required>
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 column-2">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>Last name:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="name" class="form-control" id="inputName3" tabindex="2" required>
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col col-md-offset-1 col-lg-5 col-lg-offset-1 column-1">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">                                                                                
+                                                            <div class="inputTitle">
+                                                                <span>Email:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="email" class="form-control" id="inputEmail3" tabindex="3">
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 column-2">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>Phone number (optional):</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="text" class="form-control" tabindex="4" id="inputPhone3">
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                            </div>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col col-md-offset-1 col-lg-5 col-lg-offset-1 column-1">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>Country:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <select class="form-control" tabindex="5" required>
+                                                                    <option value>Select Country</option>
+                                                                    <option>Andorra</option>
+                                                                    <option>Argentina</option>
+                                                                    <option>Australia</option>
+                                                                    <option>Belgique</option>
+                                                                    <option>België</option>
+                                                                    <option>Bolivia</option>
+                                                                    <option>Brasil</option>
+                                                                    <option>Bulgaria</option>
+                                                                    <option>Canada</option>
+                                                                    <option>Canada</option>
+                                                                    <option>Chile</option>
+                                                                    <option>Colombia</option>
+                                                                    <option>Costa Rica</option>
+                                                                    <option>Cyprus</option>
+                                                                    <option>Denmark</option>
+                                                                    <option>Deutschland</option>
+                                                                    <option>Ecuador</option>
+                                                                    <option>El Salvador</option>
+                                                                    <option>España</option>
+                                                                    <option>Estonia</option>
+                                                                    <option>Finland</option>
+                                                                    <option>France</option>
+                                                                    <option>Guatemala</option>
+                                                                    <option>Honduras</option>
+                                                                    <option>Hong Kong</option>
+                                                                    <option>Iceland</option>
+                                                                    <option>Indonesia</option>
+                                                                    <option>Ireland</option>
+                                                                    <option>Italia</option>
+                                                                    <option>Latvia</option>
+                                                                    <option>Liechtenstein</option>
+                                                                    <option>Lithuania</option>
+                                                                    <option>Luxembourg</option>
+                                                                    <option>Luxemburg</option>
+                                                                    <option>Magyarország</option>
+                                                                    <option>Malaysia</option>
+                                                                    <option>Malaysia</option>
+                                                                    <option>Malta</option>
+                                                                    <option>Monaco</option>
+                                                                    <option>México</option>
+                                                                    <option>Nederland</option>
+                                                                    <option>New Zealand</option>
+                                                                    <option>Nicaragua</option>
+                                                                    <option>Norway</option>
+                                                                    <option>Panamá</option>
+                                                                    <option>Paraguay</option>
+                                                                    <option>Perú</option>
+                                                                    <option>Philippines</option>
+                                                                    <option>Polska</option>
+                                                                    <option>Portugal</option>
+                                                                    <option>República Dominicana</option>
+                                                                    <option>Schweiz</option>
+                                                                    <option>Singapore</option>
+                                                                    <option>Slovakia</option>
+                                                                    <option>Suisse</option>
+                                                                    <option>Sverige</option>
+                                                                    <option>Türkiye</option>
+                                                                    <option>USA</option>
+                                                                    <option>United Kingdom</option>
+                                                                    <option>Uruguay</option>
+                                                                    <option>Österreich</option>
+                                                                    <option>Česká republika</option>
+                                                                    <option>Ελλάδα</option>
+                                                                    <option>台灣</option>
+                                                                    <option>日本</option>
+                                                                    <option>香港（中文）</option>
+                                                                </select>
+                                                            </div>
+                                                            <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                        </div>                                          
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 column-2">
+                                                    <div class="form-group no-margin">
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col col-md-offset-1 col-lg-5 col-lg-offset-1 column-1">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>Password:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="password" class="form-control password" id="inputPassword3" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                                <div class="progressbar form-control-feedback" style="display:none">
+                                                                    <div class="state1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 column-2">
+                                                    <div class="form-group no-margin">
+                                                        <div class="input-form">
+                                                            <div class="inputTitle">
+                                                                <span>Confirm New Password:</span>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <input type="password" class="form-control password" id="confirmPassword3" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;">
+                                                                <span class="glyphicon form-control-feedback outside" aria-hidden="true" style="display:none;"></span>
+                                                                <div class="progressbar form-control-feedback" style="display:none">
+                                                                    <div class="state1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-2 col-md-offset-5 col-lg-2 col-lg-offset-5 profile-btn">
+                                    <button type="submit" class="btn btn-default btn-block">Next</button>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center return-login">
+                                    <a href="#" class="decorated">Go back to Login</a>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- End -->
+                    </div>
+                    <!-- Change : footer -->
+                    <div class="row col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 footer-blank"></div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 phone-footer footer-long-pages">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 green-bar-transparent"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 green-bar-footer">
+                            <img src="app-content/img/img02-1.svg" class="col-sm-4 col-sm-offset-8">
+                        </div>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">function redimensionnement() {
+  if("matchMedia" in window) {
+    if(window.matchMedia("(max-width:992px)").matches) {
+        $('.tab-content').find('*').filter(':input:eq(0)').attr("placeholder", "First Name");
+        $('.tab-content').find('*').filter(':input:eq(1)').attr("placeholder", "Last Name");
+        $('.tab-content').find('*').filter(':input:eq(2)').attr("placeholder", "Email");
+        $('.tab-content').find('*').filter(':input:eq(3)').attr("placeholder", "Phone number (optional)");
+        $('.tab-content').find('*').filter(':input:eq(5)').attr("placeholder", "Password");
+        $('.tab-content').find('*').filter(':input:eq(6)').attr("placeholder", "Confirm password");
+    } else {
+        $('.tab-content').find('*').filter(':input').attr("placeholder", "");
+        $('.tab-content').find('*').filter(':input:eq(5)').attr("placeholder", "••••••••");
+        $('.tab-content').find('*').filter(':input:eq(6)').attr("placeholder", "••••••••");
+    }
+  }
+}
+window.addEventListener('resize', redimensionnement, false);
+$( document ).ready(function() {
+    $("input").keyup(validation);   
+    $("#inputPhone3").keyup(validationPhone);
+    $("#inputPhone3").focusout(formatPhone);
+    $("#inputEmail3").keyup(validationEmail);
+    $(".password").keyup(validationPassword);
+    redimensionnement();    
+});
+function validation() {
+    var span = $(this).parent().find("span");
+    var parent = $(this).parent();
+    if ($(this).is(":valid")) {     
+        span.addClass('glyphicon-ok-sign');             
+        
+        parent.removeClass('has-error'); 
+        parent.addClass('has-success');
+    }
+    else {      
+        span.removeClass('glyphicon-ok-sign');      
+        
+        parent.removeClass('has-success'); 
+        parent.addClass('has-error');
+    }       
+    span.show();
+}
+function validationEmail() {
+    var mailFormat = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+    $("#inputEmail3")[0].setCustomValidity('');
+    var input = $("#inputEmail3").val();
+    if (!mailFormat.test(input)) {
+        $("#inputEmail3")[0].setCustomValidity('Email error');
+    }
+    var span = $('span', $(this).parent());
+    var parent = $(this).parent();
+    if ($(this).is(":valid")) {     
+        span.addClass('glyphicon-ok-sign');             
+        
+        parent.removeClass('has-error'); 
+        parent.addClass('has-success');
+        
+        $('.error-message').hide();
+    }
+    else {      
+        span.removeClass('glyphicon-ok-sign');      
+        
+        parent.removeClass('has-success'); 
+        parent.addClass('has-error');
+        $('.error-message').show();
+    }       
+    span.show();
+}
+function validationPhone() {
+    var input = $(this).val();
+    var cleanInput = input.split(' ').join('')
+        .split('/').join('')
+        .split('.').join('')
+        .split('+').join('');
+    if(!$.isNumeric(cleanInput))
+    {
+        $("#inputPhone3")[0].setCustomValidity('Phone error');
+    }
+    else
+    {
+        $("#inputPhone3")[0].setCustomValidity('');
+    }
+}
+function formatPhone() {
+    var input = $(this).val();
+    var cleanInput = input.split(' ').join('')
+        .split('/').join('')
+        .split('.').join('')
+        .split('+').join('');
+    if($.isNumeric(cleanInput))
+    {
+        if(input.charAt(0) == '0')
+        {
+            if(input.charAt(1) == '0')
+            {
+                $("#inputPhone3").val(cleanInput.replace('00', '+'));
+                return;
+            }
+            else
+            {
+                $("#inputPhone3").val(cleanInput.replace('0', '+32'));
+            }
+        }
+        else if(input.charAt(0) == '+')
+        {
+            $("#inputPhone3").val([cleanInput.slice(0, 0), '+', cleanInput.slice(0)].join(''));
+        }
+    }
+}
+function validationPassword() {
+    var parent = $(this).parent();
+    var span = $('span', $(this).parent());
+    var progressbar = parent.find(".progressbar").find("div");
+    
+    var strength = 0;
+    if($(this).val().length >= 8)
+    {
+        strength++;
+    }
+    
+    if ((/^[a-zA-Z]+$/).test($(this).val()) == false) 
+    {
+        strength++;
+    }   
+    if($(this).val().length == 0) strength = 0;
+    if(strength < 2)
+    {
+        $(this)[0].setCustomValidity('The password is too weak');
+    }
+    else
+    {
+        $(this)[0].setCustomValidity('');
+    }
+    if($(this).attr('id') == "confirmPassword3")
+    {
+        if($("#confirmPassword3").val() != $("#inputPassword3").val())
+        {
+            strength = 0;
+            $("#confirmPassword3")[0].setCustomValidity('Les password ne correspondent pas');
+        }
+        else
+        {
+            $("#confirmPassword3")[0].setCustomValidity('');
+        }
+    }
+    
+    if ($(this).is(":valid")) {     
+        
+        parent.removeClass('has-error'); 
+        parent.addClass('has-success');
+    }
+    else {      
+        
+        parent.removeClass('has-success'); 
+        parent.addClass('has-error');
+    }       
+    progressbar.removeClass();
+    progressbar.addClass("state"+(strength+1));
+    span.show();
+    parent.find(".progressbar").show();
+}
+function validationEmailPhone()
+{
+    if($.trim($('#inputEmail3').val()) == '' && $.trim($('#inputPhone3').val()) == '')
+    {
+        alert("Please provide an email address or a phone number");
+        return false;
+    }
+}
+</script>

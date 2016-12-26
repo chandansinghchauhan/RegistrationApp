@@ -1,0 +1,202 @@
+﻿
+    <div class="container">
+        <!-- Change : add class index-page -->
+        <div class="row flex index-page">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 col-centered">
+                <div class="shadow">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 column1" style="background-image: url('app-content/img/img04.jpg');">
+                    <div class="green-line-left"></div>
+                    <div class="app">
+                        <img src="app-content/img/img03.png" />
+                        <h4>Application Name <span>1.0</span></h4>
+                        <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                    <div class="footer">
+                        <span>This application is protected by copyright law and international treaties.<br>
+                        &#169 2016 Schneider Electric Industries SAS. All Rights Reserved.</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 column2">
+
+                    <!-- Phone -->
+                    <div class="phone-background visible-xs-block visible-sm-block col-xs-12 col-sm-12" style="background-image: url('app-content/img/img04.jpg');"></div>
+                    <div class="phone-app-name visible-xs-block visible-sm-block col-xs-12 col-sm-12">
+                        <h4>Application Name <span>1.0</span></h4>
+                    </div>
+                    <!-- End phone -->
+
+                    <div class="green-line-right"></div>
+
+                    <div class="signin-up index">
+                    <!-- Change : vertical align center : Add of 2 div : parentCenter and verticalCenter -->
+                        <div class="parentCenter">
+                            <div class="verticalCenter">
+                                <form class="form-horizontal" ng-submit="vm.login()" role="form">
+                                  <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <input type="text" class="form-control" id="inputEmail3" ng-model="vm.username"  placeholder="Email or Phone" required>
+                                      <span class="glyphicon form-control-feedback" aria-hidden="true" style="display:none;"></span>
+
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <input type="password" class="form-control" id="inputPassword3" ng-model="vm.password" placeholder="Password" required>
+                                      <span class="glyphicon form-control-feedback" aria-hidden="true" style="display:none;"></span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right remember">
+                                      <div class="checkbox">
+                                          <input id="id" class="checkbox checkbox-1" type="checkbox"><label for="id" class="font">Remember me</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right forgot-password">
+                                        <a href="#" class="decorated font">Forgot your password?</a>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                      <button type="submit" class="btn btn-default btn-block">Login</button>
+                                    </div>
+                                  </div>
+                                </form>
+                                <div class="loginwith">
+                                    <span class="font">Login with :</span>
+                                    <a href="#">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-facebook fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-linkedin fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa  fa-google-plus fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <!-- Change : error message -->
+                                <div class="error-message" style="display:none">The user ID or password you entered is invalid. Please check and try again.
+                                </div>
+                                <!-- End -->
+
+                                <div class="notuser">
+                                    <h5 class="font">Not a returning user?</h5>
+                                    <span class="signup font">Sign up now to receive customized access to tools, documentation, resources and support build for your key needs.</span>
+                                    <a href="#!/register" class="btn btn-default btn-block signup-btn">Sign Up</a>
+                                   <!-- <button href="#!/register" type="button" class="btn btn-default btn-block signup-btn">Sign Up</button> -->
+                        
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="visible-xs-block visible-sm-block col-xs-12 link">
+                                    <a href="#">Why register?</a>
+                                </div>
+                                <!-- End phone -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 col-md-offset-5 logo-footer">
+                        <img src="app-content/img/img02.svg" style="width:100%">
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="visible-xs-block visible-sm-block col-xs-12 col-sm-12 phone-footer">
+                        <div class="visible-xs-block visible-sm-block col-xs-12 col-sm-12 green-bar-transparent"></div>
+                        <div class="visible-xs-block visible-sm-block col-xs-12 col-sm-12 green-bar-footer">
+                            <img src="app-content/img/img02-1.svg" class="col-xs-8 col-sm-8 col-xs-offset-4 col-sm-offset-4 logo-footer-mobile">
+                        </div>
+                    </div>
+                    <!-- End phone -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<script>
+$( document ).ready(function() {
+    $("#inputEmail3").focusout(validation);
+});
+function validation() {
+    var mailFormat = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+    $("#inputEmail3")[0].setCustomValidity('');
+    var input = $("#inputEmail3").val();
+    var cleanInput = input.split(' ').join('')
+        .split('/').join('')
+        .split('.').join('')
+        .split('+').join('');
+    if($.isNumeric(cleanInput))
+    {
+        if(input.charAt(0) == '0')
+        {
+            if(input.charAt(1) == '0')
+            {
+                $("#inputEmail3").val(cleanInput.replace('00', '+'));
+                return;
+            }
+            else
+            {
+                $("#inputEmail3").val(cleanInput.replace('0', '+32'));
+            }
+        }
+        else if(input.charAt(0) == '+')
+        {
+            $("#inputEmail3").val([cleanInput.slice(0, 0), '+', cleanInput.slice(0)].join(''));
+        }
+    }
+    else
+    {
+        if (!mailFormat.test(input)) {
+            $("#inputEmail3")[0].setCustomValidity('Email error');
+        }
+    }
+    var span = $('span', $(this).parent());
+    var parent = $(this).parent();
+    if ($(this).is(":valid")) {     
+        span.addClass('glyphicon-ok-sign');             
+        
+        parent.removeClass('has-error'); 
+        parent.addClass('has-success');
+        
+        $('.error-message').hide();
+    }
+    else {      
+        span.removeClass('glyphicon-ok-sign');      
+        
+        parent.removeClass('has-success'); 
+        parent.addClass('has-error');
+        $('.error-message').show();
+    }       
+    span.show();
+}
+
+
+
+                    var language = window.navigator.userLanguage || window.navigator.language;
+                    alert(language); //works IE/SAFARI/CHROME/FF
+                    console.log(window.navigator.userLanguage);
+                    console.log(window.navigator.language); // ['en', 'es', 'fr']
+
+</script>
+
+
+
+
+
+
+
+
+
+
