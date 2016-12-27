@@ -21,9 +21,9 @@
                 controllerAs: 'vm'
             })
 
-            .when('/register', {
+            .when('/registerwork1', {
                 controller: 'RegisterController',
-                templateUrl: 'register/register.view.html',
+                templateUrl: 'register/register-work-1.view.html',
                 controllerAs: 'vm'
             })
 
@@ -40,7 +40,7 @@
 
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
             // redirect to login page if not logged in and trying to access a restricted page
-            var restrictedPage = $.inArray($location.path(), ['/login', '/register']) === -1;
+            var restrictedPage = $.inArray($location.path(), ['/login', '/registerwork1']) === -1;
             var loggedIn = $rootScope.globals.currentUser;
             if (restrictedPage && !loggedIn) {
                 $location.path('/login');
